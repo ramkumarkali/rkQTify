@@ -11,16 +11,18 @@ function Search({ onSubmit, placeholder }) {
   };
 
   return (
-    <form className={styles.searchForm} onSubmit={handleSubmit}>
-      <input
-        className={styles.search}
-        placeholder={placeholder}
-        value={searchValue}
-        onChange={(e) => setSearchValue(e.target.value)}
-      />
-      <button className={styles.searchButton} type="submit">
-        <SearchIcon />
-      </button>
+    <form onSubmit={handleSubmit}>
+      <div className={styles.searchbar}>
+        <input
+          type="text"
+          placeholder={placeholder}
+          value={searchValue}
+          onChange={(e) => setSearchValue(e.target.value)}
+        />
+        <button className={styles.searchbutton} type="submit">
+          <SearchIcon />
+        </button>
+      </div>
     </form>
   );
 }
