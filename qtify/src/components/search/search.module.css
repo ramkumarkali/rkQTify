@@ -1,0 +1,22 @@
+.searchForm {
+  display: flex;
+  }
+  
+  .search {
+    background: rgba(255, 255, 255, 1);
+    width: 500px;
+    height: 40px;
+    border-radius: 8px 0px 0px 8px;
+    border: 1px solid;
+  }
+  
+  .searchButton {
+    background: rgba(255, 255, 255, 1);
+    width: 60px;
+    height: 40px;
+    border-radius: 0px 8px 8px 0px;
+    border: 1px solid; 
+    padding-top: 13px;
+    
+  }
+  
